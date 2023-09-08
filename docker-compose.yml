@@ -1,0 +1,10 @@
+version: '1'
+services:
+  myapp-python:
+    image: humaperveen/activityapp:latest
+    container_name: activityapp
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8501:8501
